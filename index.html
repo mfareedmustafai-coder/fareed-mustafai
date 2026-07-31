@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M.FAREED MUSTAFAI</title>
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+    
     <style>
         /* reset & base */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -291,6 +296,25 @@
             display: block;
             padding: 8px 0;
             font-size: 1.05rem;
+        }
+        .post-item {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .post-item .post-title {
+            font-weight: bold;
+            color: #006b54;
+            font-size: 1.1rem;
+        }
+        .post-item .post-content {
+            color: #333;
+            margin-top: 5px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 5px;
         }
         footer {
             text-align: center;
@@ -675,13 +699,13 @@
         <p style="margin-top:20px; color:#006b54;"><strong>نوٹ:</strong> ان تینوں دارو کی تفصیلات آپ اپنی مرضی کے مطابق تبدیل کر سکتے ہیں۔ ہر دارو کا اپنا الگ خانہ ہے جس میں آپ ترکیب، استعمال، اور دیگر معلومات درج کر سکتے ہیں۔</p>
     </div>
 
-    <!-- ========== IMPORTANT VIDEOS (1-141) ========== -->
+    <!-- ========== IMPORTANT VIDEOS (1-139) ========== -->
     <div id="videos" class="post">
-        <h2>🎥 Important Videos - Complete List (1-141)</h2>
+        <h2>🎥 Important Videos - Complete List (1-139)</h2>
         <p style="font-size:1.1rem; color:#006b54;">ذیل میں تمام اہم ویڈیوز کے لنک درج ہیں۔</p>
         <hr>
 
-        <!-- Videos 1-60 (Existing) -->
+        <!-- Videos 1-60 -->
         <div class="video-item"><span class="video-number">1.</span> <a href="https://youtu.be/GHyj_a_A-3s" target="_blank">https://youtu.be/GHyj_a_A-3s</a></div>
         <div class="video-description">ڈیجیٹل تصویر کے حوالے سے ویڈیو</div>
 
@@ -772,6 +796,7 @@
         <div class="video-item"><span class="video-number">30.</span> <a href="https://youtu.be/uYTgEzEtAB0" target="_blank">https://youtu.be/uYTgEzEtAB0</a></div>
         <div class="video-description">ویڈیو از: Islamic Digital Studio</div>
 
+        <!-- Videos 31-60 -->
         <div class="video-item"><span class="video-number">31.</span> <a href="https://youtu.be/L0zcARv2ae8" target="_blank">https://youtu.be/L0zcARv2ae8</a></div>
         <div class="video-description">ویڈیو از: Islamic Digital Studio</div>
 
@@ -862,8 +887,7 @@
         <div class="video-item"><span class="video-number">60.</span> <a href="https://www.youtube.com/live/iu-tCJi5_eQ" target="_blank">https://www.youtube.com/live/iu-tCJi5_eQ</a></div>
         <div class="video-description">زکوٰۃ سیمینار</div>
 
-        <!-- Videos 61-122 (Existing from Other Sections) -->
-        <!-- Note: For brevity, videos 61-122 are kept as they were -->
+        <!-- Videos 61-122 -->
         <div class="video-item"><span class="video-number">61.</span> <a href="https://youtu.be/GfluIz35jAA" target="_blank">https://youtu.be/GfluIz35jAA</a></div>
         <div class="video-description">فتاویٰ اہلسنت کا بیان</div>
         
@@ -1050,7 +1074,7 @@
         <div class="video-item"><span class="video-number">122.</span> <a href="https://youtu.be/djLRY63PtH4?si=A8TU5xuXe7ZBnunf" target="_blank">https://youtu.be/djLRY63PtH4?si=A8TU5xuXe7ZBnunf</a></div>
         <div class="video-description">اسکرین شاٹ ٹیکسٹ ایڈٹ کرنے کا طریقہ</div>
 
-        <!-- ====== NEW VIDEOS 123-141 ====== -->
+        <!-- ====== NEW VIDEOS 123-139 ====== -->
         <div class="video-item"><span class="video-number">123.</span> <a href="https://youtu.be/7GtJQWoiaXA?si=M89-E4ujx5-dFpmr" target="_blank">https://youtu.be/7GtJQWoiaXA?si=M89-E4ujx5-dFpmr</a></div>
         <div class="video-description">نئی ویڈیو</div>
 
@@ -1106,25 +1130,43 @@
         <p style="color:#006b54; font-weight:bold; font-size:1.1rem;">✅ کل 139 ویڈیوز شامل ہیں۔</p>
     </div>
 
-    <!-- ========== DARULIFTAH VIDEOS (61-115) ========== -->
+    <!-- ========== DARULIFTAH VIDEOS ========== -->
     <div id="darulifta-videos" class="post">
         <h2>⚖️ Daruliftah Ahlesunnat Videos</h2>
         <p style="font-size:1.1rem; color:#006b54;">ذیل میں دارالافتاء اہلسنت سے متعلق تمام ویڈیوز کے لنک درج ہیں۔</p>
         <hr>
-
-        <!-- These are already included in the main Important Videos section above -->
         <p style="color:#555;">یہ ویڈیوز Important Videos سیکشن میں نمبر 61 سے 115 تک موجود ہیں۔</p>
-        <p style="color:#006b54;">✅ کل 55 ویڈیوز شامل ہیں۔</p>
+        <p style="color:#006b54; font-weight:bold;">✅ کل 55 ویڈیوز شامل ہیں۔</p>
     </div>
 
-    <!-- ========== OTHER VIDEOS (116-122) ========== -->
+    <!-- ========== OTHER VIDEOS (RESTORED) ========== -->
     <div id="other-videos" class="post">
         <h2>📱 Other Platform Videos</h2>
         <p style="font-size:1.1rem; color:#006b54;">ذیل میں دیگر صفحات پر موجود ویڈیوز کے لنک درج ہیں۔</p>
         <hr>
+        <div class="video-item"><span class="video-number">116.</span> <a href="https://youtu.be/HcbUP5uzfXc" target="_blank">https://youtu.be/HcbUP5uzfXc</a></div>
+        <div class="video-description">ٹک ٹاک کے لیے ویڈیو</div>
 
-        <p style="color:#555;">یہ ویڈیوز Important Videos سیکشن میں نمبر 116 سے 122 تک موجود ہیں۔</p>
-        <p style="color:#006b54;">✅ کل 7 ویڈیوز شامل ہیں۔</p>
+        <div class="video-item"><span class="video-number">117.</span> <a href="https://youtu.be/t-KAFpep9rI" target="_blank">https://youtu.be/t-KAFpep9rI</a></div>
+        <div class="video-description">ٹک ٹاک کے لیے ویڈیو (دوم)</div>
+
+        <div class="video-item"><span class="video-number">118.</span> <a href="https://youtu.be/nhzObcReTaU" target="_blank">https://youtu.be/nhzObcReTaU</a></div>
+        <div class="video-description">ٹک ٹاک کے لیے ویڈیو (سوم)</div>
+
+        <div class="video-item"><span class="video-number">119.</span> <a href="https://youtu.be/IxOesxyLrcA" target="_blank">https://youtu.be/IxOesxyLrcA</a></div>
+        <div class="video-description">ٹک ٹاک کے لیے ویڈیو (چہارم)</div>
+
+        <div class="video-item"><span class="video-number">120.</span> <a href="https://youtu.be/chaOPahyfNw" target="_blank">https://youtu.be/chaOPahyfNw</a></div>
+        <div class="video-description">ٹک ٹاک کے لیے ویڈیو (پنجم)</div>
+
+        <div class="video-item"><span class="video-number">121.</span> <a href="https://youtu.be/x073pO4qQwY" target="_blank">https://youtu.be/x073pO4qQwY</a></div>
+        <div class="video-description">ڈسکارڈ کے لیے ویڈیو</div>
+
+        <div class="video-item"><span class="video-number">122.</span> <a href="https://youtu.be/djLRY63PtH4?si=A8TU5xuXe7ZBnunf" target="_blank">https://youtu.be/djLRY63PtH4?si=A8TU5xuXe7ZBnunf</a></div>
+        <div class="video-description">اسکرین شاٹ ٹیکسٹ ایڈٹ کرنے کا طریقہ</div>
+        <hr>
+        <p style="color:#006b54; font-weight:bold; font-size:1.1rem;">✅ کل 7 ویڈیوز شامل ہیں۔</p>
+        <p style="color:#006b54; font-weight:bold; font-size:1.1rem;">✅ کل 139 ویڈیوز شامل ہیں۔</p>
     </div>
 
     <!-- ========== VERCEL PROJECTS ========== -->
@@ -1397,7 +1439,7 @@
         </p>
     </div>
 
-    <!-- ========== ISLAMIC DIGITAL STUDIO WEBSITE (NEW PAGE) ========== -->
+    <!-- ========== ISLAMIC DIGITAL STUDIO WEBSITE ========== -->
     <div id="idswebsite" class="post">
         <h2>🌐 Islamic Digital Studio Website</h2>
         <p style="font-size:1.1rem; color:#006b54;">ذیل میں Islamic Digital Studio کی آفیشل ویب سائٹ کا لنک درج ہے۔</p>
@@ -1424,6 +1466,45 @@
 </footer>
 
 <script>
+    // ========== FIREBASE CONFIG ==========
+    const firebaseConfig = {
+        apiKey: "AIzaSyBtwg9tjN8Jxp7orDpLWruTAmKPkIClG0U",
+        authDomain: "fareed-mustafai-vercel-website.firebaseapp.com",
+        databaseURL: "https://fareed-mustafai-vercel-website-default-rtdb.firebaseio.com",
+        projectId: "fareed-mustafai-vercel-website",
+        storageBucket: "fareed-mustafai-vercel-website.firebasestorage.app",
+        messagingSenderId: "939035629284",
+        appId: "1:939035629284:web:12db8268e193143767fef1"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const database = firebase.database();
+
+    // ========== LOAD POSTS ==========
+    function loadPosts() {
+        const container = document.getElementById('postsContainer');
+        if (!container) return;
+        
+        database.ref('posts').orderByChild('timestamp').limitToLast(20).once('value').then((snapshot) => {
+            const posts = snapshot.val() || {};
+            let html = '';
+            let count = 0;
+            const keys = Object.keys(posts).sort((a, b) => (posts[b].timestamp || 0) - (posts[a].timestamp || 0));
+            if (keys.length === 0) {
+                html = '<p style="color:#999;">کوئی پوسٹس نہیں ہیں۔</p>';
+            } else {
+                keys.forEach((key) => {
+                    const post = posts[key];
+                    count++;
+                    html += `<div class="post-item"><div class="post-title">${count}. ${post.title || 'No Title'}</div><div class="post-content">${post.content || 'No Content'}</div></div>`;
+                });
+            }
+            container.innerHTML = html;
+        }).catch((error) => {
+            container.innerHTML = '<p style="color:red;">❌ پوسٹس لوڈ کرنے میں خرابی</p>';
+        });
+    }
+
     // ========== AUTO HIGHLIGHT NAVIGATION ==========
     document.addEventListener('DOMContentLoaded', function() {
         const navLinks = document.querySelectorAll('.nav a');
@@ -1454,6 +1535,16 @@
         
         highlightActive();
         window.addEventListener('hashchange', highlightActive);
+        
+        // Load posts on page load
+        loadPosts();
+        
+        // Reload posts when hash changes to #posts
+        window.addEventListener('hashchange', function() {
+            if (window.location.hash === '#posts') {
+                loadPosts();
+            }
+        });
     });
 </script>
 
