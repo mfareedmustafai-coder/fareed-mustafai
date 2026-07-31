@@ -1219,13 +1219,11 @@
         </div>
     </div>
 
-<!-- یہ وہ چھوٹا کوڈ ہے جو آپ نے ابھی پیسٹ کیا -->
-    <div id="dynamicPageContainer" class="post" style="display:none;"></div>
+</div>
 
-    <footer>
-        <p>© 2026 M.FAREED MUSTAFAI | تمام مواد آپ کی فائل کے مطابق ہے</p>
-        <p style="font-size:0.9rem; color:#555; margin-top:5px;">🚀 Website Complete - Ready for WhatsApp Hosting</p>
-    
+<footer>
+    <p>© 2026 M.FAREED MUSTAFAI | تمام مواد آپ کی فائل کے مطابق ہے</p>
+    <p style="font-size:0.9rem; color:#555; margin-top:5px;">🚀 Website Complete - Ready for WhatsApp Hosting</p>
 </footer>
 
 <script>
@@ -1328,33 +1326,27 @@
 
     // ========== LOAD CONTENT ==========
     function loadContent(hash, pages) {
-        const dynamicContainer = document.getElementById('dynamicPageContainer');
+        const container = document.getElementById('pageContent');
+        if (!container) return;
         
-        // پہلے سے موجود تمام حصوں کو چھپائیں
-        document.querySelectorAll('.post').forEach(el => {
-            el.style.display = 'none';
-        });
-
         if (pages && pages[hash]) {
+            // Show content from Firebase
             const page = pages[hash];
-            const staticEl = document.getElementById(hash);
-
-            if (staticEl) {
-                // اگر یہ پرانا پیج ہے (جیسے About یا Contact)
-                staticEl.style.display = 'block';
-            } else if (dynamicContainer) {
-                // اگر یہ ایڈمن پینل سے بنایا گیا بالکل نیا پیج ہے
-                dynamicContainer.style.display = 'block';
-                dynamicContainer.innerHTML = `<h2>${page.title}</h2><div>${page.content}</div>`;
-            }
-
-            // اگر پوسٹس والا سیکشن ہے
-            if (hash === 'posts') {
-                document.getElementById('posts').style.display = 'block';
-                loadPosts();
-            }
-        }
-    });
+            // Hide all default posts
+            document.querySelectorAll('.post').forEach(el => {
+                if (el.id !== hash && el.id !== 'posts' && el.id !== 'about' && 
+                    el.id !== 'darulifta' && el.id !== 'board' && el.id !== 'tech' &&
+                    el.id !== 'packages' && el.id !== 'contact' && el.id !== 'privacy' &&
+                    el.id !== 'terms' && el.id !== 'services' && el.id !== 'product' &&
+                    el.id !== 'jamiah' && el.id !== 'tiktok' && el.id !== 'daaru' &&
+                    el.id !== 'videos' && el.id !== 'darulifta-videos' && el.id !== 'other-videos' &&
+                    el.id !== 'vercel' && el.id !== 'dailymotion' && el.id !== 'jawahir' &&
+                    el.id !== 'allinfo' && el.id !== 'islamicdate' && el.id !== 'books' &&
+                    el.id !== 'ahlesunnatboard' && el.id !== 'gmail' && el.id !== 'idswebsite' &&
+                    el.id !== 'posts') {
+                    el.style.display = 'none';
+                }
+            });
             
             // Show the selected page
             const targetEl = document.getElementById(hash);
