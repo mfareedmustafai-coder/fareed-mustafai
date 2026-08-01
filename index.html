@@ -81,6 +81,10 @@
             color: #006b54;
             font-weight: bold;
             word-break: break-word;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         .nav {
             background: #006b54;
@@ -105,6 +109,7 @@
         }
         .nav a:hover {
             background: #004d3d;
+            text-decoration: none;
         }
         .nav a.active {
             background: #ffd700;
@@ -328,6 +333,55 @@
             .nav a { font-size: 13px; margin: 0 4px; }
             .video-description { padding-right: 20px; }
         }
+
+        /* Official Websites Box Styles */
+        .official-sites-box {
+            background: linear-gradient(135deg, #f0f8ff 0%, #e6f3f0 100%);
+            border: 3px solid #006b54;
+            border-radius: 15px;
+            padding: 25px 30px;
+            margin: 20px auto;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,107,84,0.15);
+        }
+        .official-sites-box h2 {
+            color: #006b54;
+            border-bottom: 3px solid #006b54;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .official-sites-box .site-link {
+            display: block;
+            background: white;
+            border: 2px solid #006b54;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin: 12px auto;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #006b54;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            max-width: 500px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .official-sites-box .site-link:hover {
+            background: #006b54;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,107,84,0.3);
+            text-decoration: none;
+        }
+        .official-sites-box .sub-text {
+            color: #555;
+            margin-top: 15px;
+            font-size: 1rem;
+        }
+        .official-sites-box .sub-text span {
+            color: #006b54;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -343,6 +397,26 @@
 </div>
 
 <div class="container">
+
+    <!-- ========== OFFICIAL WEBSITES LINKS (CLICKABLE) ========== -->
+    <div class="official-sites-box">
+        <h2>🌐 My Official Websites</h2>
+        <p style="font-size:1.1rem; color:#006b54; margin-bottom:15px;">👇 Click any link below to visit my official websites 👇</p>
+        
+        <a href="https://fareed-mustafaii.vercel.app/" target="_blank" class="site-link">
+            🌍 fareed-mustafaii.vercel.app
+        </a>
+        
+        <a href="https://fareed-mustafaiii.vercel.app/" target="_blank" class="site-link">
+            🌍 fareed-mustafaiii.vercel.app
+        </a>
+        
+        <a href="https://fareed-mustafai.vercel.app/" target="_blank" class="site-link">
+            🌍 fareed-mustafai.vercel.app
+        </a>
+        
+        <p class="sub-text">👆 <span>Click on any link</span> to open the website in a new tab.</p>
+    </div>
 
     <!-- ========== ABOUT US (DEFAULT) ========== -->
     <div id="about" class="post">
